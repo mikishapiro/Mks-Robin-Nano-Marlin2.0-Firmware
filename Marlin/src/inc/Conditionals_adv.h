@@ -620,7 +620,7 @@
 
 // Multiple Z steppers
 #ifndef NUM_Z_STEPPER_DRIVERS
-  #define NUM_Z_STEPPER_DRIVERS 1
+  #define NUM_Z_STEPPER_DRIVERS 2
 #endif
 
 // Fallback Stepper Driver types that depend on Configuration_adv.h
@@ -786,9 +786,9 @@
 
 // Touch Screen or "Touch Buttons" need XPT2046 pins
 // but they use different components
-#if HAS_TFT_XPT2046 || HAS_RES_TOUCH_BUTTONS
+// #if HAS_TFT_XPT2046 || HAS_RES_TOUCH_BUTTONS
   #define NEED_TOUCH_PINS 1
-#endif
+// #endif
 
 // Extensible UI pin mapping for RepRapDiscount
 #if ENABLED(TOUCH_UI_FTDI_EVE) && ANY(AO_EXP1_PINMAP, AO_EXP2_PINMAP, CR10_TFT_PINMAP)

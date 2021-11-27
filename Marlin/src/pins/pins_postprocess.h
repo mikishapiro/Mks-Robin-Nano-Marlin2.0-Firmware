@@ -759,9 +759,9 @@
 #endif
 #if NUM_Z_STEPPER_DRIVERS >= 2
   #ifndef Z2_STEP_PIN
-    #define Z2_STEP_PIN   _EPIN(Z2_E_INDEX, STEP)
-    #define Z2_DIR_PIN    _EPIN(Z2_E_INDEX, DIR)
-    #define Z2_ENABLE_PIN _EPIN(Z2_E_INDEX, ENABLE)
+    #define Z2_STEP_PIN   _EPIN(Z1_E_INDEX, STEP)
+    #define Z2_DIR_PIN    _EPIN(Z1_E_INDEX, DIR)
+    #define Z2_ENABLE_PIN _EPIN(Z1_E_INDEX, ENABLE)
     #if Z2_E_INDEX >= MAX_E_STEPPERS || !PIN_EXISTS(Z2_STEP)
       #error "No E stepper plug left for Z2!"
     #else
